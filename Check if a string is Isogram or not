@@ -1,8 +1,0 @@
-Questions:- Given a string S of lowercase alphabets, check if it is isogram or not. An Isogram is a string in which no letter occurs more than once?
-
-Sol. :- def isIsogram(self,s):
-        res = list(s)
-        sets = set(res)
-        if len(res) == len(sets):
-            return True
-        return False
