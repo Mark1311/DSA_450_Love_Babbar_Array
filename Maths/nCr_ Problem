@@ -1,0 +1,16 @@
+Solution:- 
+
+import math
+class Solution:
+    def nCr(self, n, r):
+        # code here
+        if(n<r):
+            return 0
+        if(n==r):
+            return 1
+        k=n-r
+        n1=(math.factorial(n))
+        r1=(math.factorial(r))
+        nr=(math.factorial(k))
+        m=(n1//(nr*r1))%(1000000007)
+        return m
