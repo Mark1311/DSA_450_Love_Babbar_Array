@@ -1,0 +1,22 @@
+Question:- Given a string S, check if it is palindrome or not.
+
+Example 1:
+
+Input: 
+S = "abba"
+Output: 
+1
+Explanation: 
+S is a palindrome
+
+
+Answer:- 
+
+class Solution:
+	def isPalindrome(self, S):
+	    m = len(S)
+	    n = int(m//2)
+	    for i in range(m):
+	        if (S[i]!=S[m-i-1]):
+	            return 0
+	    return 1
