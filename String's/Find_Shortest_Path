@@ -1,0 +1,30 @@
+Questions:- Given a route   containing 4 directions (E,W,N,S). Find the Shortest path to reach destination.
+
+Solution:-
+
+The Main Login is =====> 
+
+N = Y+1
+S= Y-1
+E= X+1
+W = X-1
+
+import math
+st = "WSNEENSEWSSEENNW"
+def countpath(st):
+    x = 0
+    y = 0
+    for i in st:
+        if i =="S":
+            y = y-1
+        elif i == 'N':
+            y = y+1
+        elif i == "E":
+            x = x+1
+        else:
+            x = x-1
+    X2 = pow(x, 2)
+    Y2 = pow(y,2)
+    
+    return math.sqrt(X2+Y2)
+print(countpath(st))
