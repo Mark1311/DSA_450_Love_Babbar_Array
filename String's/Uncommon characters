@@ -1,0 +1,23 @@
+Questions:- Given two strings A and B consisting of lowercase english characters. Find the characters that are not common in the two strings. 
+
+Note :- Return the string in sorted order.
+
+
+Solution:- 
+
+    def UncommonChars(self,A, B):
+        seen =set()
+        for i in A:
+            if i not in B:
+                seen.add(i)
+        for j in B:
+            if j not in A:
+                seen.add(j)
+                
+        res1 = ''.join(map(str,sorted(seen)))
+        
+        if res1 == "":
+            return -1
+        else:
+            return res1
+        
