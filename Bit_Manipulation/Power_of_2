@@ -1,0 +1,7 @@
+Question:- Check n is power of 2 or not?
+
+Sol:- 
+    def isPowerofTwo(self,n : int ) -> bool:
+        if n <= 0:
+            return False
+        return (n & (n - 1)) == 0
