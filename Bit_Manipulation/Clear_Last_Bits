@@ -1,0 +1,10 @@
+N = 1111
+i = 2
+Output = 1100
+
+bitmask = (~0)<<i
+
+def Clearithbit(N, i):
+  return N & bitmask
+
+print(Clearithbit(1111,2))
