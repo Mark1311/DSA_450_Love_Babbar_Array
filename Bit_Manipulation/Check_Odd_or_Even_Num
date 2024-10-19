@@ -1,0 +1,9 @@
+Questions:- Number is odd ya even?
+
+bitmask = 1
+num = 3
+
+if((num & bitmask) ==0):
+  print("Number is Ever)
+else:
+  print("Number is Odd")
