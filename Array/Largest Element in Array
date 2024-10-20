@@ -1,0 +1,6 @@
+    def largest(self, arr : List[int]) -> int:
+          lrg = arr[0]
+          for i in arr:
+            if i>lrg:
+              i = lrg
+          return lrg
