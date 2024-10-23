@@ -1,0 +1,10 @@
+    def increment(self, arr, N):
+        sum=""
+        for i in arr:
+            sum+=str(i)
+        
+        sum=int(sum)+1
+        arr1=[]
+        for i in str(sum):
+            arr1.append(i)
+        return arr1
